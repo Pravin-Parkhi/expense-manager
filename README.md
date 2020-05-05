@@ -1,2 +1,1 @@
-# expense-manager
-Expense Manager
+## Expense Manager

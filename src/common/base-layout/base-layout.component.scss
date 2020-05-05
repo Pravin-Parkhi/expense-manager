@@ -1,0 +1,14 @@
+.base-layout-container{
+  padding: 95px 0 40px 90px;
+  min-height: 100vh;
+  background: #fafafa;
+  position: relative;
+  .content-wrapper{
+    display: flex;
+    .view-wrapper{
+      width: 100%;
+      overflow-y: auto;
+      padding: 20px;
+    }
+  }
+}
