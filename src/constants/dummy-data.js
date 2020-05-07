@@ -24,7 +24,7 @@ export const DUMMY_DATA = {
     {
       "id": 4,
       "description": "House rent",
-      "category": "Food & Dining",
+      "category": "FoodNDining",
       "amount": "35900",
       "date": "01-03-2020"
     },

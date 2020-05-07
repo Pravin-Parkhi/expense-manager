@@ -2,6 +2,8 @@ import { zipObject } from 'lodash'
 
 const ACTION_TYPES = [
   "GET_BILL_LIST",
+
+  'GET_CATEGORY_WISE_BILL_LIST',
   
   "ADD_BILL",
 

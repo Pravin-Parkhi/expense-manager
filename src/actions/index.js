@@ -6,6 +6,13 @@ export const getBillList = () => {
   }
 }
 
+export const getCategoryWiseBillList = (category) => {
+  return {
+    type: ActionTypes.GET_CATEGORY_WISE_BILL_LIST,
+    category
+  }
+}
+
 export const addBill = (bill) => {
   return {
     type: ActionTypes.ADD_BILL,

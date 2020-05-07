@@ -1,0 +1,19 @@
+.bill-dialog-box {
+  .paper {
+    width: 600px;
+    min-width: 320px;
+    min-height: 180px;
+
+    .field-wrapper{
+      margin-bottom: 30px;
+
+      .MuiOutlinedInput-root{
+        width: 100%;
+      }
+    }
+    
+    .date-picker{
+      margin-top: 0px;
+    }
+  }
+}
