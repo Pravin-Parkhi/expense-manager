@@ -68,6 +68,7 @@ function BillList (props) {
 
   const hideBillDialog = () => {
     setBillDialog(false)
+    setActiveBill(undefined)
   }
 
   const handleAddBill = (newBill) => {

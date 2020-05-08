@@ -28,10 +28,7 @@ function BillDialog (props) {
   const { handleCloseCallback, addBillCallback, updateBillCallback } = props
 
   const handleClose = () => {
-    setValues({})
-    setTimeout(()=> {
-      handleCloseCallback()
-    })
+    handleCloseCallback()
   }
 
   const handleChange = name => event => {
