@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .bill-container{
   max-width: 260px;
   margin: 15px;
@@ -40,6 +42,8 @@
     display: none;
 
     .icon{
+      background-color: $primary-color;
+      color: $contrast-color;
       padding: 8px;
       svg{
         font-size: 22px;

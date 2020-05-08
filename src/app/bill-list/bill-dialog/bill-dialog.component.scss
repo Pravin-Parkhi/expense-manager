@@ -1,3 +1,5 @@
+@import '../../../styles/colors.scss';
+
 .bill-dialog-box {
   .paper {
     width: 600px;
@@ -14,6 +16,21 @@
     
     .date-picker{
       margin-top: 0px;
+    }
+
+    .MuiDialogActions-root{
+      margin: 0px 10px;
+      .MuiButton-root{
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        padding: 10px 30px;
+        margin: 0px 5px;
+      }
+      .submit-btn{
+        margin: 0px 5px;
+        background: $primary-color;
+        color: $contrast-color;
+      }
     }
   }
 }

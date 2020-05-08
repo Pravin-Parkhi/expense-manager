@@ -150,7 +150,7 @@ function BillDialog (props) {
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose} color='primary'>Cancel</Button>
-        <Button onClick={handleSubmit } color='primary'>Submit</Button>
+        <Button onClick={handleSubmit } color='primary' className='submit-btn'>Submit</Button>
       </DialogActions>
     </Dialog>
   )

@@ -1,3 +1,25 @@
 .dashboard-container{
-  
+  height: calc(100vh - 130px);
+  overflow-y: auto;
+
+  .visualization-container{
+    .filter-wrapper{
+      text-align: right;
+      margin: 10px;
+
+      .filter-option{
+        width: 200px;
+      }
+    }
+    .viz-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      canvas{
+        width: 1000px !important;
+        height: 400px !important;
+      }
+    }
+  }
 }

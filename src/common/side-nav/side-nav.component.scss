@@ -49,12 +49,12 @@
     height: 25px;
   }
 
-  .page-links,  .page-links:hover, .page-links:visited, .page-links:active{
+  .page-links{
     color: $primary-color;
   }
 
-  .active-page {
-    color: #87c4fa !important;
-    background: rgba(135, 196, 250, 0.2) !important;
+  .page-links:hover, .active-page {
+    color: #44a1f4 !important;
+    background: rgba(135, 196, 250, 0.3) !important;
   }
 }
