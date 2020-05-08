@@ -77,16 +77,9 @@ function BillList (props) {
   const handleUpdateBill  = (updatedBill) => {
     updateBill(updatedBill)
   }
-  
-  // useEffect(()=> {
-  //   // fetchBillList()
-
-  //   setTimeout(()=>{
-  //     setLoader(false)
-  //   }, 500)
-  // },[])
 
   useEffect(()=> {
+    setLoader(true)
     fetchCategoryWiseBillList()
 
     setTimeout(()=>{
@@ -97,6 +90,15 @@ function BillList (props) {
   useEffect(()=> {
     if(billDialog){
       hideBillDialog()
+    }
+
+    if(selectedCategory){
+      setLoader(true)
+      fetchCategoryWiseBillList()
+
+      setTimeout(()=>{
+        setLoader(false)
+      }, 500)
     }
   },[billList])
 
