@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import Dashboard from '../app/dashboard/dashboard.component'
 import BillList from '../app/bill-list/bill-list.component'
@@ -10,6 +10,7 @@ export default () => {
     <BrowserRouter>
       <Switch>
         <BaseLayout>
+          <Route exact path='/' render={() => (<Redirect to='/dashboard' />)} /> 
           <Route exact path='/dashboard' component={Dashboard} />
           <Route exact path='/bill-list' component={BillList} />
         </BaseLayout>
