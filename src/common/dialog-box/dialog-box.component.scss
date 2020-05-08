@@ -1,6 +1,22 @@
+@import '../../styles/colors.scss';
+
 .dialog-box {
   .paper {
     min-width: 320px;
     min-height: 180px;
+  }
+  .MuiDialogActions-root{
+    margin: 20px 10px;
+    .MuiButton-root{
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      padding: 10px 30px;
+      margin: 0px 5px;
+    }
+    .submit-btn{
+      margin: 0px 5px;
+      background: $primary-color;
+      color: $contrast-color;
+    }
   }
 }

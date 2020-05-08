@@ -33,7 +33,7 @@ function DialogBox (props) {
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose} color='primary'>Cancel</Button>
-        <Button onClick={handleProceed} color='primary'>Proceed</Button>
+        <Button onClick={handleProceed} color='primary' className='submit-btn'>Proceed</Button>
       </DialogActions>
     </Dialog>
   )
