@@ -1,6 +1,6 @@
 ## Expense Manager
 
-This app is simple expense management web application, which is build using react and redux library.
+This app is simple expense management web application, which is built using react and redux library.
 
 ## Steps To Run The Project (Execute the steps in terminal in given sequence)
 
