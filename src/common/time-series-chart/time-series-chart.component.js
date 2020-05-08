@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { Line } from 'react-chartjs-2';
 
 import './time-series-chart.component.scss'
+import {MONTHS} from '../../constants/dummy-data'
 
 
 export default function TimeSeriesChart (props) {
-  const { data } = props
+  const { data, selectedMonth } = props
   const [ billList, setBillList ] = useState({
     labels: [],
     datasets: []
@@ -19,7 +20,7 @@ export default function TimeSeriesChart (props) {
     let billListCopy = billList
     billListCopy.labels = data.days
     billListCopy.datasets[0] = {
-      label: 'Monthly Expense',
+      label: 'Bill Amount',
       lineTension: 0.5,
       backgroundColor: 'rgba(75,192,192,1)',
       borderColor: 'rgba(0,0,0,1)',
@@ -45,12 +46,20 @@ export default function TimeSeriesChart (props) {
       options={{
         title:{
           display:true,
-          text:'Expense per month',
+          text:`Expense for ${MONTHS[selectedMonth]} month`,
           fontSize:20
         },
         legend:{
-          display:true,
-          position:'right'
+          display:false
+        },
+        scales: {
+          yAxes: [{
+            ticks: {
+              callback: function(value, index, values) {
+                return `${value} INR`
+              }
+            }
+          }]
         }
       }}
     />

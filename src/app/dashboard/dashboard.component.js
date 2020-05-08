@@ -43,7 +43,7 @@ function Dashboard (props) {
       yearObj[month].numberOfDays = numberOfDays
       for(let dayIndx=0; dayIndx<numberOfDays; dayIndx++){
         yearObj[month].billAmounts.push(0)
-        yearObj[month].days.push(dayIndx)
+        yearObj[month].days.push(`${dayIndx+1}-${selectedMonth}-2020`)
       }
     })
 
@@ -89,7 +89,7 @@ function Dashboard (props) {
           </FormControl>
         </div>
         <div className='viz-wrapper'>
-          <TimeSeriesChart data={visualData} />
+          <TimeSeriesChart data={visualData} selectedMonth={selectedMonth} />
         </div>
       </div>
     )
