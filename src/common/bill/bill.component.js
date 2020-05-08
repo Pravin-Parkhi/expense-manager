@@ -23,7 +23,7 @@ export default function Bill (props) {
 
 
   return (
-    <Card className='bill-container'>
+      <Card className={"bill-container " + (bill.isPayable ? 'highlighted-card' : '')}>
       <CardActions className='action-wrapper'>
         <IconButton aria-label="Edit" className='icon' onClick={handleEditClick}>
           <EditOutlinedIcon />
@@ -39,6 +39,7 @@ export default function Bill (props) {
         <Typography variant="h5" component="h2" className='bill-amount'>{`${bill.amount} INR`}</Typography>
         <Typography color="textSecondary" className='bill-category'>{bill.category}</Typography>
         <Typography variant="body2" component="p" className='bill-desc'>{bill.description}</Typography>
+        <Typography variant="body2" component="p" className='bill-desc'>{bill.date}</Typography>
       </CardContent>
     </Card>
   )

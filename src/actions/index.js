@@ -6,10 +6,18 @@ export const getBillList = () => {
   }
 }
 
-export const getCategoryWiseBillList = (category) => {
+export const getFilteredBillList = (category, month) => {
   return {
-    type: ActionTypes.GET_CATEGORY_WISE_BILL_LIST,
-    category
+    type: ActionTypes.GET_FILTERED_RESULT,
+    category,
+    month
+  }
+}
+
+export const getBillsToBePaid = (budget) => {
+  return {
+    type: ActionTypes.GET_BILLS_TO_BE_PAID,
+    budget
   }
 }
 

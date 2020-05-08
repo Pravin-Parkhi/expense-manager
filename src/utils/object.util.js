@@ -12,3 +12,18 @@ export function deepCopy (data) {
     return JSON.parse(JSON.stringify(data))
   }
 }
+
+// returns the date in mm/dd/yyyy format
+export function formatDate(date) {
+  var d = date,
+      month = '' + (d.getMonth() + 1),
+      day = '' + d.getDate(),
+      year = d.getFullYear();
+
+  if (month.length < 2) 
+      month = '0' + month;
+  if (day.length < 2) 
+      day = '0' + day;
+
+  return [month, day, year].join('-');
+}
